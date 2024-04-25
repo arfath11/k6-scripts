@@ -1,5 +1,7 @@
 import { browser } from 'k6/experimental/browser';
 import { check } from 'k6';
+import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
+
 
 export const options = {
   scenarios: {
@@ -10,7 +12,8 @@ export const options = {
       //spin up 3 concurrent users
       vus: 3,
       // Keep the test on for 10 seconds
-      duration: '10s', 
+      duration: '50s', 
+ 
       options: {
         browser: {
           type: 'chromium',
@@ -54,3 +57,22 @@ export default async function () {
     page.close();
     context.close();
   }}
+
+//UNCOMMENT THIS IS YOU WANT TO GENERATE A REPORT
+
+// export function handleSummary(data) {
+   
+//     // Get the current date
+//     const currentDate = new Date();
+  
+//     // Format the date as YYYY-MM-DD
+//     const formattedDate = currentDate.toISOString().slice(0,10);
+    
+//     // Generate filename with current date
+//     const filename = `BL_testk6__${formattedDate}.html`;
+//   return {
+//     // add timestamp to the file name
+    
+//    [filename]: htmlReport(data),
+//   };
+// }
