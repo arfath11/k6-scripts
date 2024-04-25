@@ -19,7 +19,7 @@ For Linux
 ```shell
  k6 run protocol.js
 ```
-2. To run with proxy and modifiy defualt parameters. For example run the test with 10 virtual users to make a total 30 requests.
+2. To run with proxy and modifiy default parameters. For example run the test with 10 virtual users to make a total 30 requests.
 ```shell
 HTTPS_PROXY="localhost:9443" HTTP_PROXY="localhost:9443"    k6 run protocol.js   --vus 10 --iterations 30
 ```
