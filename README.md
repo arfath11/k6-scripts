@@ -33,7 +33,7 @@ HTTPS_PROXY="localhost:9443" HTTP_PROXY="localhost:9443"    k6 run protocol.js  
 ```
 
 ## MORE
-- To undestand the output metrics refer [LINNK](https://k6.io/docs/using-k6/metrics/reference/)
+- To undestand the output metrics refer [LINK](https://k6.io/docs/using-k6/metrics/reference/)
 - K6 provide multiple options to configure your testing refer [LINK](https://grafana.com/docs/k6/latest/using-k6/k6-options/reference/)
 - To perform  high load test refer [Fine-tune OS](https://grafana.com/docs/k6/latest/set-up/fine-tune-os/)
  
