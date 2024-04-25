@@ -29,6 +29,6 @@ HTTPS_PROXY="localhost:9443" HTTP_PROXY="localhost:9443"    k6 run protocol.js  
 ```
 3 To run with proxy 
 ```shell
- K6_BROWSER_HEADLESS=false K6_BROWSER_ARGS="proxy-server=20.55.96.158:9443" k6   run   script.js --vus 10 
+ K6_BROWSER_HEADLESS=false K6_BROWSER_ARGS="proxy-server=localhost:9443" k6   run   script.js --vus 10 
 ```
  
