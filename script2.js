@@ -10,9 +10,9 @@ export const options = {
 
       executor: 'constant-vus',
       //spin up 3 concurrent users
-      vus: 2,
-      // Keep the test on for 10 seconds
-      duration: '40s', 
+      vus: 3,
+      // Keep the test on for 60 seconds
+      duration: '60s', 
  
       options: {
         browser: {
