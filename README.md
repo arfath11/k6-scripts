@@ -3,6 +3,7 @@
  - Protocol level testing mentioned in `protocol*.js` files. Browser level mentioned in `script*.js`
  - Browser level testing works only for chromium browser.
  - Comments are mentioned in the scripts to indicate the goal of a test script
+ - Certificates to be added to system level there is no alternative option to input a certifcate file.
 ## Installatin
 Follow this [guide](https://grafana.com/docs/k6/latest/set-up/install-k6/) 
 ## Basic Glossory 
